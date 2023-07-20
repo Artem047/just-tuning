@@ -1,0 +1,48 @@
+.mainPasting{
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-rows: repeat(2, minmax(0, 1fr));
+	margin-top: 80px;
+	row-gap: 60px;
+
+	&__cars{
+		width: 360px;
+		height: 415px;
+		background-color: #FFF;
+		cursor: pointer;
+
+		p{
+			padding-top: 30px;
+			color: #B7B8BC;
+			font-size: 10px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+		}
+		h3{
+			padding-top: 20px;
+			color: #B7B8BC;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+		}
+		h2{
+			padding-top: 20px;
+			color: #131926;
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+		}
+		p,h3,h2{
+			padding-left:25px;
+
+		}
+
+	}
+	a{
+		text-decoration: none;
+	}
+}

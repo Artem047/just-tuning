@@ -1,0 +1,77 @@
+.footer{
+	width: 100%;
+	background: #131926;
+	
+
+	&__link{
+display: flex;
+	gap: 100px;
+	justify-content: center;
+	align-items: center;
+	}
+
+	img{
+		padding: 58px 0px;
+	}
+
+	&__nav{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+
+		a{
+			color: #FAFAFA;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			text-decoration: none;
+		}
+	}
+	&__adress{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+
+		p{
+			color: #FAFAFA;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			text-decoration: none;
+		}
+	}
+	&__social{
+		p{
+			color: #FAFAFA;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			text-decoration: none;
+		}
+
+		&__icon{
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+		}
+	}
+	&__confidentiality{
+		display: flex;
+		justify-content: center;
+		gap: 100px;
+		padding-bottom: 45px;
+
+		a{
+			color: #FAFAFA;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			text-decoration: none;
+		}
+	}
+}
