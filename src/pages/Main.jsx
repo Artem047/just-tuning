@@ -2,16 +2,31 @@ import { Outlet, useLocation } from "react-router-dom";
 import Filter from "../components/Filter";
 import style from "../styles/Main.module.scss";
 import Map from "../components/Map";
+import { useForm } from "react-hook-form";
 
 const Main = () => {
-  const location = useLocation();
-  let activeTitle = "JUST-TUNING";
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
 
-  if (location.pathname === "/pasting") {
-    activeTitle = "Оклейка";
-  } else if (location.pathname === "/wheels") {
-    activeTitle = "Колеса";
-  }
+  const location = useLocation();
+  const titleMap = {
+    "/pasting": "Оклейка",
+    "/wheels": "Колеса",
+    "/antichrome": "Антихром",
+    "/equipping": "Доснащение",
+    "/interior": "Пошив салона",
+    "/pendant": "Доработка подвески",
+  };
+  const activeTitle = titleMap[location.pathname] || "JUST-TUNING";
+
   return (
     <main className={style.main}>
       <h1>{activeTitle}</h1>
@@ -49,9 +64,17 @@ const Main = () => {
           Оставьте заявку и мы подберём оптимальный вариант под необходимые
           задачи
         </h2>
-        <form>
-          <input type="text" placeholder="Ваше имя" />
-          <input type="tel" placeholder="+ 7 (953) 567-34-56" />
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <input
+            type="name"
+            placeholder="Ваше имя"
+            {...register("name", { required: true })}
+          />
+          <input
+            type="tel"
+            placeholder="+ 7 (953) 567-34-56"
+            {...register("tel", { required: true })}
+          />
           <button type="submit">Отправить заявку</button>
         </form>
         <h2>

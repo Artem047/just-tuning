@@ -9,9 +9,9 @@ const Footer = () => {
       <div className={style.footer__link}>
         <img src={logo} alt="" />
         <div className={style.footer__nav}>
-          <Link>Главная</Link>
-          <Link>О нас</Link>
-          <Link>Контакты</Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </div>
         <div className={style.footer__adress}>
           <p>г. Москва МКАД 32-й км стр. 4</p>

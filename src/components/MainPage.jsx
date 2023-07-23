@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import style from "../../styles/MainFilterPage/MainAllWork.module.scss";
-import { dataMainAllWork, dataMainAllWorkProject } from "../../utils/data";
-
-const MainAllWork = () => {
+import style from "../styles/MainPage.module.scss";
+const MainPage = ({ data, dataProject }) => {
   return (
     <div className={style.mainWork}>
       <div className={style.mainWork__blockCars}>
-        {dataMainAllWork.map((e, index) => {
+        {data.map((e, index) => {
           return (
             <Link key={index} className={style.mainWork__cars}>
               <img src={e.image} alt="" />
@@ -19,7 +17,7 @@ const MainAllWork = () => {
       </div>
       <h5>Проекты</h5>
       <div>
-        {dataMainAllWorkProject.map((p, index) => {
+        {dataProject.map((p, index) => {
           return (
             <div key={index} className={style.mainWork__blockProject}>
               <div className={style.mainWork__project}>
@@ -35,4 +33,4 @@ const MainAllWork = () => {
   );
 };
 
-export default MainAllWork;
+export default MainPage;
