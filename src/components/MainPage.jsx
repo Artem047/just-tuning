@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom";
 import style from "../styles/MainPage.module.scss";
+import { useSearchContext } from "./SearchContext";
 const MainPage = ({ data, dataProject }) => {
+  const { searchQuery } = useSearchContext();
+
+  const filteredData = data.filter((work) => {
+    return (
+      work.heading.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      work.text.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  });
   return (
     <div className={style.mainWork}>
       <div className={style.mainWork__blockCars}>
-        {data.map((e, index) => {
+        {filteredData.map((e, index) => {
           return (
             <Link key={index} className={style.mainWork__cars}>
               <img src={e.image} alt="" />

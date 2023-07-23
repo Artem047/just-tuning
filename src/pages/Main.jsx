@@ -5,12 +5,7 @@ import Map from "../components/Map";
 import { useForm } from "react-hook-form";
 
 const Main = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
     reset();

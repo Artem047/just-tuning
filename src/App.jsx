@@ -17,60 +17,66 @@ import {
   dataEquippingProject,
 } from "./utils/data/dataEquipping";
 import { dataInterior, dataInteriorProject } from "./utils/data/dataInterior";
+import { SearchProvider } from "./components/SearchContext";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/*" element={<Main />}>
-          <Route
-            index
-            element={
-              <MainPage data={dataMainWork} dataProject={dataMainProject} />
-            }
-          />
-          <Route
-            path="pasting"
-            element={
-              <MainPage data={dataPasting} dataProject={dataPastingProject} />
-            }
-          />
-          <Route
-            path="wheels"
-            element={
-              <MainPage data={dataWheels} dataProject={dataWheelsProject} />
-            }
-          />
-          <Route
-            path="antichrome"
-            element={
-              <MainPage
-                data={dataAntichrome}
-                dataProject={dataAntichromeProject}
-              />
-            }
-          />
-          <Route
-            path="equipping"
-            element={
-              <MainPage
-                data={dataEquipping}
-                dataProject={dataEquippingProject}
-              />
-            }
-          />
-          <Route
-            path="interior"
-            element={
-              <MainPage data={dataInterior} dataProject={dataInteriorProject} />
-            }
-          />
-        </Route>
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <SearchProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/*" element={<Main />}>
+            <Route
+              index
+              element={
+                <MainPage data={dataMainWork} dataProject={dataMainProject} />
+              }
+            />
+            <Route
+              path="pasting"
+              element={
+                <MainPage data={dataPasting} dataProject={dataPastingProject} />
+              }
+            />
+            <Route
+              path="wheels"
+              element={
+                <MainPage data={dataWheels} dataProject={dataWheelsProject} />
+              }
+            />
+            <Route
+              path="antichrome"
+              element={
+                <MainPage
+                  data={dataAntichrome}
+                  dataProject={dataAntichromeProject}
+                />
+              }
+            />
+            <Route
+              path="equipping"
+              element={
+                <MainPage
+                  data={dataEquipping}
+                  dataProject={dataEquippingProject}
+                />
+              }
+            />
+            <Route
+              path="interior"
+              element={
+                <MainPage
+                  data={dataInterior}
+                  dataProject={dataInteriorProject}
+                />
+              }
+            />
+          </Route>
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </SearchProvider>
     </div>
   );
 }
