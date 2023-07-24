@@ -14,7 +14,7 @@ const Map = () => {
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <CircleMarker center={position} pathOptions={fillBlueOptions} radius={30}>
         <Popup>
-          <a href="https://yandex.ru/maps/-/CPrYf3b" target="blank">
+          <a href="https://yandex.ru/maps/-/CPtcN1T" target="blank">
             <b>Just-Tuning</b> <br /> Студия автотюнингаавтосервис,
             автотехцентравтоателье
           </a>
