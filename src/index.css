@@ -7,10 +7,10 @@ body {
   width: 100%;
   margin: auto;
   background-color: #fafafa;
-  font-family: "Questrial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a.active {
   color: white;
   border: none;
-  background-color: red;
+  background-color: #df2528;
 }

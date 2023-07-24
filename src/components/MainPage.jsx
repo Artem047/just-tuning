@@ -10,6 +10,12 @@ const MainPage = ({ data, dataProject }) => {
       work.text.toLowerCase().includes(searchQuery.toLowerCase())
     );
   });
+  const filteredDataProject = dataProject.filter((project) => {
+    return (
+      project.heading.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.text.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  });
   return (
     <div className={style.mainWork}>
       <div className={style.mainWork__blockCars}>
@@ -26,7 +32,7 @@ const MainPage = ({ data, dataProject }) => {
       </div>
       <h5>Проекты</h5>
       <div>
-        {dataProject.map((p, index) => {
+        {filteredDataProject.map((p, index) => {
           return (
             <div key={index} className={style.mainWork__blockProject}>
               <div className={style.mainWork__project}>
