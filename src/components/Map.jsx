@@ -15,8 +15,8 @@ const Map = () => {
       <CircleMarker center={position} pathOptions={fillBlueOptions} radius={30}>
         <Popup>
           <a href="https://yandex.ru/maps/-/CPtcN1T" target="blank">
-            <b>Just-Tuning</b> <br /> Студия автотюнингаавтосервис,
-            автотехцентравтоателье
+            <b>Just-Tuning</b> <br /> Студия автотюнинга, автосервис,
+            автотехцентр,автоателье
           </a>
         </Popup>
       </CircleMarker>
