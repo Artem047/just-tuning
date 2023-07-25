@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useSearchContext } from "./SearchContext";
 import { useState } from "react";
 import search from "../assets/svg/search.svg";
-import searchNav from "../assets/svg/searchNav.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseFill } from "react-icons/ri";
 import jt from "../assets/images/jt.png";
@@ -45,7 +44,6 @@ const Navbar = () => {
         <div className={style.nav__dropdown_menu}>
           <img src={jt} alt="" className={style.nav__dropdown_menu__image} />
           <button>
-            <img src={searchNav} alt="" />
             <input
               type="search"
               onFocus={handleFocus}
