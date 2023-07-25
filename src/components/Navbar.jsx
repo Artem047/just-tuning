@@ -53,9 +53,15 @@ const Navbar = () => {
             />
           </button>
           <div className={style.nav__dropdown_menu__links}>
-            <Link to="/">Главная</Link>
-            <Link to="/about">О нас</Link>
-            <Link to="/contact">Контакты</Link>
+            <Link to="/" onClick={closeModal}>
+              Главная
+            </Link>
+            <Link to="/about" onClick={closeModal}>
+              О нас
+            </Link>
+            <Link to="/contact" onClick={closeModal}>
+              Контакты
+            </Link>
           </div>
           <p>Мы в социальных сетях:</p>
           <div className={style.nav__dropdown_menu__icons}>

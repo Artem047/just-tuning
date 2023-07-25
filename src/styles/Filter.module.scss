@@ -1,16 +1,14 @@
 .filter {
   max-width: 1440px;
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 
-
   a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 50px;
     border-radius: 29px;
@@ -19,13 +17,11 @@
     cursor: pointer;
     text-decoration: none;
 
-    &:hover{
-      background-color: #C12023;
+    &:hover {
+      background-color: #c12023;
       border: none;
       color: white;
     }
-
-
     color: #131926;
     font-size: 14px;
     font-style: normal;
@@ -33,4 +29,20 @@
     line-height: normal;
   }
 }
+@media (max-width: 740px) {
+  .filter{
+    padding: 0px 60px;
 
+    a{
+      width: 400px;
+      border-radius: 0px;
+      border: none;
+      color: #131926;
+    }
+
+
+    .dropdownContent{
+      background-color: #FAFAFA;
+    }
+  }
+}
