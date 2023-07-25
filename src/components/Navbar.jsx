@@ -77,7 +77,7 @@ const Navbar = () => {
       <button className={style.nav__search}>
         <img src={search} alt="" />
         <input
-          type="search"
+          type="text"
           onFocus={handleFocus}
           onBlur={handleBlur}
           placeholder={placeholderText}
