@@ -211,6 +211,13 @@
   .nav{
     height: 60px;
 
+    &__dropdown_menu{
+      width: 80%;
+      button{
+        margin: 30px 50px;
+      }
+    }
+
     &__logo{
       width: 60px;
     }
@@ -219,6 +226,17 @@
 @media (max-width: 420px){
   .nav{
     height: 60px;
+
+    &__dropdown_menu{
+      width: 95%;
+      button{
+        margin: 30px 50px;
+      }
+
+      &__image{
+        width: 200px;
+      }
+    }
 
     &__logo{
       width: 60px;
