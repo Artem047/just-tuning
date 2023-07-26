@@ -36,6 +36,7 @@
         background-color: #df2528;
         border-radius: 29px;
         border: none;
+        cursor: pointer;
 
         color: #fafafa;
         font-size: 18px;
@@ -51,4 +52,66 @@
       font-weight: 800;
       line-height: normal;
     }
+}
+
+@media (max-width: 1000px){
+  .main__contact{
+    h2{
+      padding: 70px 30px;
+    }
+    form{
+      padding: 0px 30px;
+
+      input{
+        width: 260px;
+      }
+      button{
+        width: 300px;
+
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 740px){
+  .main__contact{
+    h2{
+      text-align: center;
+      font-size: 40px;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+
+      input{
+        width: 100%;
+      }
+      button{
+        width: 100%;
+      }
+    }
+    b{
+      font-size: 40px;
+    }
+  }
+}
+@media (max-width: 520px){
+  .main__contact{
+    h2{
+      font-size: 30px;
+    }
+    b{
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 420px){
+  .main__contact{
+    h2{
+      font-size: 25px;
+    }
+    b{
+      font-size: 25px;
+    }
+  }
 }
