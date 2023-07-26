@@ -46,3 +46,18 @@
     }
   }
 }
+@media (max-width: 420px){
+  .filter{
+    padding: 0px 60px;
+
+    a{
+      width: 300px;
+      border-radius: 0px;
+      border: none;
+      color: #131926;
+    }
+    .dropdownContent{
+      background-color: #FAFAFA;
+    }
+  }
+}

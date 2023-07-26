@@ -97,19 +97,92 @@
       row-gap: 35px;
       column-gap: 30px;
     }
-    &__cars{
+    &__cars {
       width: 100%;
       height: 530px;
 
-      img{
+      img {
         width: 100%;
       }
     }
   }
 }
 @media (max-width: 740px) {
+  .mainWork {
+    padding: 0px 60px;
+    &__blockCars {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      row-gap: 35px;
+      column-gap: 25px;
+    }
+    &__cars {
+      width: 100%;
+      height: 340px;
+
+      h3 {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width: 520px) {
+  .mainWork {
+    padding: 0px 30px;
+    &__blockCars {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      column-gap: 0px;
+
+      
+    }
+    &__cars {
+        height: 530px;
+
+        p{
+          font-size: 14px;
+        }
+        h3{
+          font-size: 20px;
+        }
+
+        h2{
+          font-size: 30px;
+        }
+      }
+  }
 }
 @media (max-width: 420px) {
+  .mainWork{
+    padding: 0px 60px;
+    
+    &__blockCars{
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      column-gap: 0px;
+    }
+    &__cars{
+      height: 340px;
+
+      p{
+        font-size: 10px;
+      }
+      h3{
+        font-size: 14px;
+      }
+
+      h2{
+        font-size: 20px;
+      }
+    }
+  }
 }
