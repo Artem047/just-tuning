@@ -57,8 +57,18 @@
   .main{
     &__process{
       p{
+        text-align: center;
         padding: 40px 35px;
       }
     }
+  }
+}
+@media (max-width: 420px) {
+  .main{
+     &__process{
+      h1{
+        font-size: 50px;
+      }
+     }
   }
 }
