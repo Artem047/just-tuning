@@ -29,12 +29,6 @@
     }
   }
 }
-
-@media (max-width: 1000px) {
-  .main{
-    
-  }
-}
 @media (max-width: 740px) {
   .main{
     h1{
@@ -55,6 +49,9 @@
 }
 @media (max-width: 520px) {
   .main{
+    h1{
+      font-size: 60px;
+    }
     &__process{
       p{
         text-align: center;
@@ -65,6 +62,9 @@
 }
 @media (max-width: 420px) {
   .main{
+    h1{
+      font-size: 50px;
+    }
      &__process{
       h1{
         font-size: 50px;
