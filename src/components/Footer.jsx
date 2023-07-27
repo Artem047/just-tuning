@@ -2,10 +2,20 @@ import style from "../styles/Footer.module.scss";
 import logo from "../assets/images/logo_foot.png";
 import { Link } from "react-router-dom";
 import { BsTelegram, BsWhatsapp, BsYoutube } from "react-icons/bs";
+import strelka from "../assets/svg/strelka.svg";
 
 const Footer = () => {
+  const handleClk = () => {
+    window.scrollTo({ behavior: "smooth", top: 0, left: 0 });
+  };
   return (
     <footer className={style.footer}>
+      <img
+        src={strelka}
+        alt=""
+        className={style.footer__strelka}
+        onClick={handleClk}
+      />
       <div className={style.footer__link}>
         <img src={logo} alt="" />
         <div className={style.footer__nav}>

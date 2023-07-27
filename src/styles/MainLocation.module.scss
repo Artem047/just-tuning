@@ -9,3 +9,17 @@
       line-height: normal;
     }
 }
+@media (max-width: 740px){
+  .main__location{
+    h2{
+      font-size: 80px;
+    }
+  }
+}
+@media (max-width: 520px){
+  .main__location{
+    h2{
+      font-size: 60px;
+    }
+  }
+}
