@@ -9,7 +9,7 @@ const Contact = () => {
     <div className={style.contact}>
       <h1>Наши контакты</h1>
       <div className={style.contact__info}>
-        <img src={jt} alt="" />
+        <img src={jt} alt="" className={style.contact__info__image} />
         <h2>
           Мы работаем ежедневно <br />
           <b>по предварительной записи с 10:00 до 21:00</b>
